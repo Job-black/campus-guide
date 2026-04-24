@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>student-guid</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><span>🏫</span><spa class="logo-text">C</spa>AMPUS-<spa class="logo-text">G</spa>UIDE</span></span></div>
+        <div class="links-btn">
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Faculties</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Q&A</a></li>
+            
+            </ul>
+
+            <div class="btn">
+                <button class="no-color"><a href="#">Login</a></button>
+                <button class="colored"><a href="#">Sign up</a></button>
+            </div>
+        </div>
+
+         <div class="menu-toggle" id="menuToggle">
+            ☰
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-home">
+            <div class="home-text">
+                <h1>Your First year.</h1>
+                <h1>Made Simple.</h1>
+                <p>Explore faculties, get study resources,ask questions and connect with sinoirs.</p>
+                <div class="btn-home">
+                    <div>
+                        <button class="btn-start"><a href="#">Get Start</a></button>
+                    </div>
+                   <div>
+                     <button class="btn-explore"><a href="#">Explore Faculties</a></button>
+                   </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="image-F">
+                <h1>Features</h1>
+            </div>
+            <div class="features-card">
+                <div class="card1 card">
+                    <div class="logo"><span>🎓</span></div>
+                    <h2>Explore Faculties</h2>
+                    <p>Learn what each faculty offers and what to expect.</p>
+                </div>
+
+                <div class="card2 card">
+                    <div class="logo"><span>📚</span></div>
+                    <h2>Study Resources</h2>
+                    <p>Access note, <strong>past Question</strong> and helpful material</p>
+                </div>
+
+                <div class="card3 card">
+                    <div class="logo"><span>📥</span></div>
+                    <h2>Ask & learn</h2>
+                    <p>Ask Question and learn from other students.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="how">
+            <div class="image-how">
+                <h1>HOW IT WORKS</h1>
+            </div>
+            <div class="steps">
+                <div class="step1 step">
+                    <span>🚸</span>
+                    <h1>step1</h1>
+                    <h2>Choose faculty</h2>
+                </div>
+                <div class="step2 step">
+                    <span>✍</span>
+                    <h1>step2</h1>
+                    <h2>Learn what to <strong>Expect</strong></h2>
+                </div>
+                <div class="step3 step">
+                    <span>🧰</span>
+                    <h1>step3</h1>
+                    <h2>Access Materials</h2>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+    <script>
+        const menuToggle = document.getElementById("menuToggle");
+        const navLinks = document.getElementById("nav-links");
+
+        menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+
+</body>
+</html>

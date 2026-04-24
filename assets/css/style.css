@@ -1,0 +1,362 @@
+:root{
+/* CSS HEX */
+--prussian-blue: #0a122aff;
+--vibrant-coral: rgb(0, 0, 0);
+--amethyst-smoke: rgb(2, 2, 2);
+--spring-green: rgb(0, 0, 0);
+--dusty-grape: rgb(51, 43, 168);
+
+/*for cards in the how to section*/
+/* CSS HEX */
+--light-blue: rgb(4, 31, 89);
+--thistle: rgb(154, 154, 154);
+--jade-green: rgb(0, 0, 0);
+--shadow-grey: #1a1423ff;
+--dusty-grape: rgb(0, 0, 0);
+
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia,Times, serif;
+    color: rgb(255, 255, 255);
+    
+    
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    width: 100%;
+    background-color: rgb(220, 216, 211);
+
+}
+
+span{
+    font-size: 20px;
+    padding: 5px;
+}
+
+.links-btn {
+    display: flex;
+   gap: 50px;
+   align-items: center;
+}
+
+.links-btn ul{
+    display: flex;
+    gap: 30px;
+}
+
+.links-btn ul li{
+    list-style: none;
+}
+
+.links-btn ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+}
+
+.links-btn ul li a:hover{
+    color: blue;
+    
+}
+
+.btn-home{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+  gap: 50px;
+}
+
+
+.btn button{
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 12px;
+    border: 1px solid black;
+}
+
+.btn button a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.btn .colored{
+    background-color: var(--dusty-grape);
+}
+
+.btn .no-color a{
+    color: black;
+}
+
+.btn .no-color:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+.btn .no-color a:hover{
+    color: rgb(0, 0, 0);
+}
+
+.btn .colored:hover{
+    background: var(--spring-green);
+}
+.btn .colored a:hover{
+    background: var(--spring-green);
+}
+
+.btn .no-colore a:hover{
+    background-color:var(--spring-green) ;
+}
+.btn .no-colore:hover{
+    background-color:var(--spring-green) ;
+}
+
+.hero-home{
+    background:url('/assets/images/home2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 90vh;
+    width: 100%;
+    border-bottom: 50px solid rgb(192, 192, 205);
+}
+
+.hero-home .home-text{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 90px;
+    line-height: 1.6;
+   
+   
+
+}
+
+
+.home-text h1{
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: white;
+}
+
+.hero-home .home-text .btn-home button{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(13, 12, 12);
+    margin-top: 20px;
+}
+
+.hero-home .home-text .btn-home button a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.hero-home .home-text .btn-home .btn-explore{
+    background-color: var(--dusty-grape);
+}
+
+.hero-home .home-text .btn-home .btn-explore:hover{
+    background-color: var(--spring-green);
+}
+
+.hero-home .home-text .btn-home .btn-explore a:hover{
+    color: white;
+}
+
+.hero-home .home-text .btn-home .btn-start:hover{
+    background-color: black;
+}
+
+.hero-home .home-text .btn-home .btn-start a:hover{
+    color: white;
+}
+
+
+
+
+.features-card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 10px;
+    padding: 30px;
+    
+}
+
+.features-card .card{
+   border: 2px solid grey;
+   padding: 20px;
+   border-radius: 17px;
+   background: transparent;
+   text-align: center;
+   line-height: 1.6;
+   
+}
+.features-card .card:hover{
+    animation-name: moveup;
+   animation-duration: 5s;
+}
+
+.card .logo span{
+     background-color: rgb(62, 111, 130);
+     border-radius: 50px;
+     padding: 20px;
+     font-size: 2rem;
+    
+    
+}
+
+.card .logo{
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.features-card .card1{
+    background-color:var(--amethyst-smoke) ;
+}
+.features-card .card2{
+    background-color:var(--prussian-blue) ;
+}
+.features-card .card3{
+    background-color:var(--vibrant-coral) ;
+}
+
+.features h1{
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    font-size: 2.3rem;
+}
+
+@keyframes moveup{
+    from{
+        transform: translateY(-10px);
+    }
+}
+
+.steps{
+     display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 10px;
+    padding: 30px;
+    background: transparent;
+}
+
+
+.step{
+      border: 2px solid rgb(146, 132, 132);
+   padding: 20px;
+   border-radius: 17px;
+   background: transparent;
+   text-align: center;
+   line-height: 1.6;
+}
+
+.step1{
+    background-color: var(--spring-green);
+}
+
+.step2{
+    background-color:var(--light-blue) ;
+}
+
+.step3{
+    background-color: var(--shadow-grey);
+}
+
+
+.step span{
+    background-color: #0a122aff;
+    padding: 20px;
+    border-radius: 50px;
+   font-size: 2rem;
+}
+
+
+.steps .step:hover{
+     animation-name: moveup;
+   animation-duration: 5s;
+}
+
+.image-how{
+    background: url('/assets/images/how.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    background-attachment: fixed;
+}
+
+.image-how h1{
+    width: 30%;
+    height: inherit;
+    padding: 200px 0px 0px 0px;
+    background-color: var(--light-blue);
+    opacity: 0.9;
+}
+
+.image-F{
+    background: url('/assets/images/F3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    background-attachment: fixed;
+}
+
+
+.image-F h1{
+    background-color: rgb(242, 242, 242);
+    font-size: 1.5rem;
+    width: 30%;
+    height: inherit;
+    opacity: 0.6;
+    padding-top: 200px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #222;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+
+
+
