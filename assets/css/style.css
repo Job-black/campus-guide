@@ -38,6 +38,10 @@ header{
     padding: 20px 20px;
     width: 100%;
     background-color: rgb(220, 216, 211);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
 
 }
 
@@ -133,6 +137,8 @@ span{
     height: 90vh;
     width: 100%;
     border-bottom: 50px solid rgb(192, 192, 205);
+    -webkit-animation: hero-home 5s ease-out both;
+	        animation: hero-home 5s ease-out both;
 }
 
 .hero-home .home-text{
@@ -330,11 +336,12 @@ span{
     padding-top: 200px;
 }
 
-.menu-toggle {
-  display: none;
-  font-size: 25px;
+
+ #click, .mnt-btn {
+    display: none;
+    font-size: 25px;
   cursor: pointer;
-}
+  }
 
 @media (max-width: 768px) {
   .nav-links {
@@ -347,16 +354,146 @@ span{
     align-items: center;
     display: none;
   }
+    .mnt-btn{
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
 
-  .nav-links.active {
-    display: flex;
+    .mnt-btn span{
+        color: black;
+    }
+
+    
+    
+
+    .links-btn ul{
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        background-color: #444;
+        height: 45vh;
+        width: 25%;
+        display: block;
+        line-height: 1.9;
+        padding-left: 10px;
+        text-align: center;
+        margin-left: 470px;
+        border-radius: 20px;
+    }
+
+    #click:checked ~ ul{
+        left: 0;
+    }
+
+ 
+
+  
+}
+
+.shake-bottom {
+	-webkit-animation: shake-bottom 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: shake-bottom 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+@-webkit-keyframes shake-bottom {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
   }
-
-  .menu-toggle {
-    display: block;
+  10% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+  80% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  90% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+}
+@keyframes shake-bottom {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+  }
+  10% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+  80% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  90% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
   }
 }
 
 
+.tracking-in-contract {
+	-webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
 
 
